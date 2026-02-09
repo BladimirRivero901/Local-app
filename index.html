@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LOCAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>LOCAL</h1>
+  <nav>
+    <button onclick="mostrar('inicio')">🏠 Inicio</button>
+    <button onclick="mostrar('publicar')">➕ Publicar</button>
+    <button onclick="mostrar('admin')">📊 Admin</button>
+  </nav>
+</header>
+
+<section id="inicio">
+  <h2>Productos</h2>
+  <div id="listaProductos"></div>
+</section>
+
+<section id="publicar" class="oculto">
+  <h2>Publicar producto</h2>
+  <p>💳 Costo: <b>100 créditos</b></p>
+
+  <input id="nombre" placeholder="Nombre del producto">
+  <input id="precio" type="number" placeholder="Precio">
+  <button onclick="publicarProducto()">Publicar</button>
+
+  <p id="creditos"></p>
+</section>
+
+<section id="admin" class="oculto">
+  <h2>Panel LOCAL</h2>
+  <div id="panelAdmin"></div>
+</section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
 
